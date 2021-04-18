@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+
+<head>
+	<title>Phishing Detection Using ML</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <!-- Bootstrap Core CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/css/mdb.min.css" rel="stylesheet">
+	<!-- font-awesome icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- //Custom Theme files -->
+
+
+
+
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="{% static 'assets/js/scripts.js' %}"></script>
+    <script src="{% static 'assets/js/face-api.min.js' %}"></script>
+
+
+</head>
+
+<body>
+
+<style>
+
+        .navbar {
+            background-color: #1c158c !important;
+        }
+        a {
+            color: #ffffff;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        canvas {
+            position: absolute;
+            margin-top: -70%;
+            margin-left: 22%;
+        }
+        .navbar__heading {
+            top: 3px;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%);
+            letter-spacing: 10px;
+        }
+
+
+    </style>
+
+<nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand d-flex" href="#">
+            <h3 class="mt-2 text-white navbar__heading">Phising Detection Using ML </h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav ml-auto nav-flex-icons text-white">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light" href="{% url 'logout' %}">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+			<!-- Default form login -->
+<form method="post" action="{% url 'result' %}" class="text-center border border-light p-5" style="width:500px;height:350px; margin-left:32%;margin-top:5%">
+
+    <p class="h4 mb-4"><b>Phishing Detection Using ML</b></p>
+
+    <div class="md-form form-sm mb-5">
+        <input type="url" id="url" class="form-control form-control-sm validate" name="url" required>
+        <label data-error="wrong" data-success="right" style="font-weight: bold" for="url">Enter the website URL</label>
+    </div>
+
+    <div class="text-center form-sm mt-2">
+      <button class="btn btn-info" type="submit" name="search"> Submit <i class="fa fa-search" style="font-size: 15px;"></i></button>
+    </div>
+    {% if success_msg %}
+        <br>
+        <p>Result of Entered URL is {{ success_msg }} </p>
+    {% endif %}
+</form><br>
+
+
+
+<footer style="text-align: center;">
+{#       <b><p> Made with <i class="fa fa-heart" style="color:red;" aria-hidden="true"></i> by </b><a href="https://www.dsilabz.com" target="_blank"><b style="color:red;">DSI </b><b style="color:gray;">Labz</b></a> <b><p> Made with <i class="fa fa-heart" style="color:red;" aria-hidden="true"></i> by </b><a href="https://www.dsilabz.com" target="_blank"><b style="color:red;">DSI </b><b style="color:gray;">Labz</b></a>#}
+</footer>
+<!-- Default form login -->
+    <!-- js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- js-->
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.14/js/mdb.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+	</script>
+	<!-- //Bootstrap Core JavaScript -->
+</body>
+
+</html>

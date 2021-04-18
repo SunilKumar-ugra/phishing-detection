@@ -1,0 +1,17 @@
+https://www.google.com/
+https://drive.google.com/
+https://images.google.com/
+https://www.google.com/gmail/
+https://accounts.google.com/signup/
+https://www.flipkart.com/account/login/
+https://www.flipkart.com/
+https://www.amazon.com/ap/signin/
+https://www.amazon.com/
+https://login.live.com/login.srf/
+https://signup.live.com/signup/
+https://www.facebook.com/
+https://www.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dnav_ya_signin%3Fie%3DUTF8%26node%3D15529609011%26pf_rd_p%3D0b6ad79d-73e4-4037-b7c7-83edf48c7d06%26pf_rd_s%3Dnav-sitewide-msg-export%26pf_rd_t%3D4201%26pf_rd_i%3Dnavbar-4201%26pf_rd_m%3DATVPDKIKX0DER%26pf_rd_r%3DKMB83EDTKER0QJ2E0JXT%26pf_rd_r%3DKMB83EDTKER0QJ2E0JXT%26pf_rd_p%3D0b6ad79d-73e4-4037-b7c7-83edf48c7d06&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&&openid.pape.max_auth_age=0
+
+
+
+
